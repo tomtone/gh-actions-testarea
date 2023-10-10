@@ -15,16 +15,16 @@ if($value == 'build'){
 }
 if($value == 'deploy'){
     $rows = [
-        ['ASD-160', $date->format('d.m.Y'), 'https://www.google.de'],
-        ['ASD-161', $date->sub(new DateInterval('PT4H'))->format('d.m.Y'), 'https://www.google.de'],
-        ['ASD-162', $date->sub(new DateInterval('PT62H'))->format('d.m.Y'), 'https://www.google.de']
+        ['✅ ASD-160', $date->format('d.m.Y'), 'https://www.google.de'],
+        ['✅ ASD-161', $date->sub(new DateInterval('PT4H'))->format('d.m.Y'), 'https://www.google.de'],
+        ['✅ ASD-162', $date->sub(new DateInterval('PT62H'))->format('d.m.Y'), 'https://www.google.de']
     ];
 }
 if($value == 'cleanup'){
     $rows = [
-        ['ASD-180', $date->format('d.m.Y'), 'https://www.google.de'],
-        ['ASD-190', $date->sub(new DateInterval('PT27H'))->format('d.m.Y'), 'https://www.google.de'],
-        ['ASD-210', $date->sub(new DateInterval('PT56H'))->format('d.m.Y'), 'https://www.google.de']
+        ['❌ ASD-180', $date->format('d.m.Y'), 'https://www.google.de'],
+        ['❌ ASD-190', $date->sub(new DateInterval('PT27H'))->format('d.m.Y'), 'https://www.google.de'],
+        ['❌ ASD-210', $date->sub(new DateInterval('PT56H'))->format('d.m.Y'), 'https://www.google.de']
     ];
 }
 
