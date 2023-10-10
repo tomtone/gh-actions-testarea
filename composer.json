@@ -1,0 +1,16 @@
+{
+    "name": "tom/gh-actions-testarea",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Tom\\GhActionsTestarea\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas von Gostomski",
+            "email": "thomas.von.gostomski@wamoco.de"
+        }
+    ],
+    "require": {}
+}

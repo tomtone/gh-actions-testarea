@@ -13,19 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     name: Build
     steps:
+      - name: install composer
+        run: composer install
       - name: Adding markdown
-        run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
+        run: php print.php Build >> $GITHUB_STEP_SUMMARY
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
     steps:
         - name: Adding markdown
-          run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
+          run: php print.php deploy >> $GITHUB_STEP_SUMMARY
   cleanup:
       name: Cleanup
       runs-on: ubuntu-latest
       needs: deploy
       steps:
         - name: Adding markdown
-          run: echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
+          run: php print.php Cleanup >> $GITHUB_STEP_SUMMARY
