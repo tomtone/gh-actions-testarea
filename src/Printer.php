@@ -1,6 +1,9 @@
 <?php
 namespace Tom\GhActionsTestarea;
 
+/**
+ * original implementation comes from https://gist.github.com/dapepe/9956717
+ */
 class Printer {
     /** @var int The source path */
     public $maxlen = 50;
