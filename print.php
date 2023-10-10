@@ -30,4 +30,5 @@ if($value == 'cleanup'){
 
 $printer = new \Tom\GhActionsTestarea\Printer($columns, $rows);
 
+echo 'Summary  :rocket:' . PHP_EOL;
 echo $printer->render();
